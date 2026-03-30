@@ -1,4 +1,0 @@
-from mcp.server.fastmcp import FastMCP
-from data.mock_patients import patients
-
-mcp = FastMCP("rounding-copilot")
