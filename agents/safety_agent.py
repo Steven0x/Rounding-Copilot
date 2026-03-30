@@ -52,10 +52,3 @@ Write a concise SBAR note with four clearly labeled sections: Situation, Backgro
 if __name__ == "__main__":
     result = generate_handoff("P002")
     print(result)
-
-def get_prior_notes(patient_id: str):
-    if not os.path.exists(MEMORY_FILE):
-        return []
-    with open(MEMORY_FILE, "r") as f:
-        data = json.load(f)
-    return data.get(patient_id, [])
